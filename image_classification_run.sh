@@ -1,6 +1,7 @@
 docker run \
 	-d \
 	--gpus all \
+	--shm-size=32G \
 	-p 8888:8888 \
 	-p 6006:6006 \
 	-v /home/davi/docker_workspace/image_classification:/tf \
